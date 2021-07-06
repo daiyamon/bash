@@ -1,0 +1,29 @@
+#!/bin/bash/
+
+figlet mkproject
+echo "By: Eric Nunez"
+
+read -p "What will your new project be called?: " projectName
+
+clear
+sleep2
+
+mkdir $projectName
+clear
+
+cd $projectName
+
+touch index.html
+touch style.css
+touch script.js
+
+code .
+
+clear
+
+figlet  done
+
+exit
+
+
+
